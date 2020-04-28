@@ -14,11 +14,14 @@
   border: 1px solid black;
   height: 300px;
 }
+.debug [class*="col-"] > .container [class*="col-"] {
+  background-color: coral;
+}
 /* fine debug */
 /* .[class="col-"] > .container .[class="col-"] { */
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .container::after{
@@ -29,6 +32,7 @@
 [class*="col-"]{
   float: left;
 }
+
 /* framework */
 
 .col-1 {
