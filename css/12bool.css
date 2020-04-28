@@ -7,7 +7,7 @@
 
 /* Inizio debug */
 .debug .container {
-  /* background-color: green; */
+  background-color: green;
 }
 .debug [class*="col-"]{
   background-color: pink;
@@ -15,7 +15,9 @@
   height: 300px;
 }
 .debug [class*="col-"] > .container [class*="col-"] {
-  background-color: coral;
+  background-color: lightcoral;
+  border: 1px solid white;
+  height: 300px;
 }
 /* fine debug */
 /* .[class="col-"] > .container .[class="col-"] { */
@@ -32,7 +34,8 @@
 [class*="col-"]{
   float: left;
 }
-
+[class*="col-"] > .container [class*="col-"]{
+}
 /* framework */
 
 .col-1 {
